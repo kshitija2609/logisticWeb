@@ -70,7 +70,18 @@ html::-webkit-scrollbar-thumb {
   border: 0.2rem solid var(--red);
 }
 
-.btn-round:hover {
+.arrow {
+  color: #fff;
+  margin: 1em 0;
+}
+.arrow::after {
+  display: inline-block;
+  padding-left: 8px;
+  content: "➞";
+  transition: transform 0.3s ease-out;
+}
+.arrow:hover::after {
+  transform: translateX(4px);
 }
 
 html {
@@ -191,6 +202,12 @@ header #menu-bar {
 
 .home .card-left {
   border: none !important;
+  transition: all 0.3 ease-in-out;
+}
+
+.home .card-left:hover {
+  margin-top:-8px;
+  cursor: pointer;
 }
 
 .home .card-left .card-body {
@@ -222,35 +239,33 @@ header #menu-bar {
   color: #171717;
 }
 
-.section-subheding{
+.section-subheding {
   font-size: 18px;
   color: var(--red);
   text-transform: uppercase;
 }
 
-.section-paragraph{
+.section-paragraph {
   font-size: 16px;
   line-height: 1.625em;
 }
 
-
-.divider{
+.divider {
   border-top: 2px solid var(--red);
   width: 30%;
 }
 
-.inner-back{
+.inner-back {
   margin-top: 100px;
 }
 
-.overlay-illustraion{
+.overlay-illustraion {
   background-image: url("../images/design.png");
   background-position: top right;
   background-repeat: no-repeat;
   opacity: 1;
   /* transition: background 0.3s, border-radius 0.3s, opacity 0.3s; */
 }
-
 
 .testimonial {
   text-align: center;
@@ -324,7 +339,6 @@ header #menu-bar {
     height: auto;
   }
 }
-
 
 /* .banner-area{
   position: relative;
