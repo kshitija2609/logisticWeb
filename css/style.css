@@ -206,7 +206,7 @@ header #menu-bar {
 }
 
 .home .card-left:hover {
-  margin-top:-8px;
+  margin-top: -8px;
   cursor: pointer;
 }
 
@@ -334,9 +334,84 @@ header #menu-bar {
   background: #72c02c;
   border: 5px double;
 }
-@media only screen and (max-width: 768px) {
-  .carousel-item {
-    height: auto;
+
+/* footer */
+
+.footer{
+  height:400px;
+  background: #000;
+}
+
+.logo.is-animetion {
+  margin-top: 0.6em;
+}
+
+.logo.is-animetion span {
+  display: inline-block;
+  font-size:7rem;
+  color:#fff;
+  -webkit-animation: wave-text 1s ease-in-out infinite;
+  animation: wave-text 1s ease-in-out infinite;
+}
+
+.logo.is-animetion span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.logo.is-animetion span:nth-of-type(2) {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.logo.is-animetion span:nth-of-type(3) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.logo.is-animetion span:nth-of-type(4) {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.logo.is-animetion span:nth-of-type(5) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.logo.is-animetion span:nth-of-type(6) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.5s;
+}
+.logo.is-animetion span:nth-of-type(7) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.6s;
+}
+.logo.is-animetion span:nth-of-type(8) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.7s;
+}
+.logo.is-animetion span:nth-of-type(9) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.8s;
+}
+
+@-webkit-keyframes wave-text {
+  00% {
+    transform: translateY(0em);
+  }
+  60% {
+    transform: translateY(-0.6em);
+  }
+  100% {
+    transform: translateY(0em);
+  }
+}
+
+@keyframes wave-text {
+  00% {
+    transform: translateY(0em);
+  }
+  60% {
+    transform: translateY(-0.6em);
+  }
+  100% {
+    transform: translateY(0em);
   }
 }
 
@@ -433,5 +508,11 @@ header #menu-bar {
   section {
     padding: 1rem 5%;
     padding-top: 8.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel-item {
+    height: auto;
   }
 }
