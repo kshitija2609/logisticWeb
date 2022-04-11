@@ -33,10 +33,11 @@ html {
   overflow-x: hidden;
 }
 
-body {
-  overflow-x: hidden;
-  /* height:200rem; */
+.container {
+  max-width: 1196px !important;
 }
+
+
 
 html::-webkit-scrollbar {
   width: 4px;
@@ -87,6 +88,10 @@ html::-webkit-scrollbar-thumb {
 html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
+}
+
+.marginTop16 {
+  margin-top: 16px;
 }
 
 header {
@@ -269,7 +274,7 @@ header #menu-bar {
 
 .testimonial {
   text-align: center;
-  padding: 78px 37px 25px 70px;
+  padding: 50px 30px 30px 30px;
   margin: 70px 15px 35px;
   background-color: #fff;
   border-radius: 5px;
@@ -335,10 +340,42 @@ header #menu-bar {
   border: 5px double;
 }
 
+/* whyus */
+
+.whyus {
+  margin-top: 100px;
+}
+
+.whyus .circle {
+  width: fit-content;
+  padding: 32px 32px 32px 32px;
+  background-color: #fff;
+  border-radius: 100px 100px 100px 100px;
+  box-shadow: 0px 4px 50px 0px rgb(0 0 0 / 15%);
+  margin-top: -120px;
+  margin-bottom: 20px;
+}
+
+.whyus .inner-div {
+  padding: 55px;
+  margin: 16px;
+  background: #eff4f9;
+  /* margin: -68px 0px 0px 0px; */
+}
+
+.whyus .inner-div h3 {
+  font-size: 2.4rem;
+}
+
+.whyus .inner-div p {
+  font-size: 1.4rem;
+  line-height: 1.625em;
+}
+
 /* footer */
 
-.footer{
-  height:400px;
+.footer {
+  height: 400px;
   background: #000;
 }
 
@@ -348,8 +385,8 @@ header #menu-bar {
 
 .logo.is-animetion span {
   display: inline-block;
-  font-size:7rem;
-  color:#fff;
+  font-size: 7rem;
+  color: #fff;
   -webkit-animation: wave-text 1s ease-in-out infinite;
   animation: wave-text 1s ease-in-out infinite;
 }
@@ -415,10 +452,9 @@ header #menu-bar {
   }
 }
 
-
 /* home upper card */
 
-.cardbody{
+.cardbody {
   box-shadow: 0px 4px 50px 0px rgb(0 0 0 / 15%);
   /* transition:  0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; */
   margin: 20px 20px 30px 20px;
@@ -432,19 +468,18 @@ header #menu-bar {
   border-radius: 16px;
 }
 
-.cardbody h4{
+.cardbody h4 {
   font-size: 2.4rem;
   margin: 0;
   margin-left: 8px;
 }
-.cardbody p{
+.cardbody p {
   font-size: 1.4rem;
 }
 
-.cardbody .truck-icon{
-  font-size: 3rem
+.cardbody .truck-icon {
+  font-size: 3rem;
 }
-
 
 /* .banner-area{
   position: relative;
@@ -457,14 +492,10 @@ header #menu-bar {
 
 /* media queries  */
 
-@media (max-width: 991px) {
-  html {
-    font-size: 55%;
-  }
+@media only screen and  (max-width: 1330px) {
 
-  .home::before,
-  .home::after {
-    display: none;
+  .home h1 {
+    font-size: 48px;
   }
 }
 
@@ -531,19 +562,18 @@ header #menu-bar {
   }
 }
 
-@media (max-width: 500px) {
-  html {
-    font-size: 50%;
-  }
-
-  section {
-    padding: 1rem 5%;
-    padding-top: 8.5rem;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .carousel-item {
     height: auto;
+  }
+
+  .home h1 {
+    font-size: 45px;
+  }
+
+  .home .card-left {
+    width: 123px;
+    border:1px solid red;
+    margin: 4px;
   }
 }
