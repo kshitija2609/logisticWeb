@@ -58,7 +58,7 @@ html::-webkit-scrollbar-thumb {
 
 .btn-round {
   width: fit-content;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   padding: 0.7rem 3rem;
   border-radius: 5rem;
   margin-top: 1rem;
@@ -169,7 +169,7 @@ header #menu-bar {
 }
 
 .home h1 {
-  font-size: 60px;
+  font-size: 55px;
   color: #fff;
 }
 
@@ -414,6 +414,34 @@ header #menu-bar {
     transform: translateY(0em);
   }
 }
+
+
+/* home upper card */
+
+.cardbody{
+  box-shadow: 0px 4px 50px 0px rgb(0 0 0 / 15%);
+  /* transition:  0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; */
+  margin: 20px 20px 30px 20px;
+  /* margin-right: 20px; */
+  /* margin-left: 20px; */
+  padding: 26px 25px 0px 25px;
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  margin-top: -109px;
+  border-radius: 16px;
+}
+
+.cardbody h4{
+  font-size: 2.4rem;
+  margin: 0;
+  margin-left: 8px;
+}
+.cardbody p{
+  font-size: 1.4rem;
+}
+
+
 
 /* .banner-area{
   position: relative;
